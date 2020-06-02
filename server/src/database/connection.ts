@@ -5,8 +5,9 @@ const connection = Knex({
     client: 'sqlite3',
     connection: {
         // Armazena o arquivo do banco de dados
-        filename: path.resolve(__dirname, 'database.sqlite ')
-    }
+        filename: path.resolve(__dirname, 'database.sqlite')
+    },
+    useNullAsDefault: true
 })
 
 export default connection
